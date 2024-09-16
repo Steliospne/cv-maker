@@ -156,6 +156,9 @@ export default function Home() {
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     if (file) {
+      // const getBase64StringFromDataURL = (dataURL) =>
+      //   dataURL.replace("blob:", "").replace(/^.+,/, "");
+      // const imageUrl = getBase64StringFromDataURL(URL.createObjectURL(file));
       const imageUrl = URL.createObjectURL(file);
       const newPerson = { ...person, image: imageUrl };
       setPerson(newPerson);
