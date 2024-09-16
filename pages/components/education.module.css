@@ -1,0 +1,41 @@
+.education > div {
+  margin: 5px 0;
+}
+
+.eduEntry > p {
+  font-weight: 700;
+}
+
+.eduEntry > p:first-child {
+  font-size: 1.2rem;
+}
+
+.eduEntry {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dateDisplay {
+  display: flex;
+  gap: 10px;
+}
+
+.eduEntry > div {
+  display: flex;
+}
+
+.eduEntry > div > label {
+  display: block;
+  width: 110px;
+}
+
+.addEdu {
+}
+
+.deleteEdu {
+  position: absolute;
+  left: 76%;
+  top: 70%;
+}
