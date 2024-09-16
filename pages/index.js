@@ -3,7 +3,7 @@ import Contact from "./components/contact";
 import Avatar from "./components/avatar";
 import SidePanel from "./components/sidepanel";
 import Education from "./components/education";
-import data from "./data";
+import data from "./components/data";
 import { v4 as uuidv4 } from "uuid";
 import EditLogo from "./components/logo/editLogo";
 import SaveLogo from "./components/logo/saveLogo";
