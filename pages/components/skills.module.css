@@ -1,0 +1,12 @@
+.skills > ul > div {
+  display: flex;
+}
+
+.skills > ul > div > li {
+  width: 150px;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-around;
+}
