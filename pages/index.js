@@ -156,13 +156,18 @@ export default function Home() {
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     if (file) {
-      // const getBase64StringFromDataURL = (dataURL) =>
-      //   dataURL.replace("blob:", "").replace(/^.+,/, "");
-      // const imageUrl = getBase64StringFromDataURL(URL.createObjectURL(file));
       const imageUrl = URL.createObjectURL(file);
-      const newPerson = { ...person, image: imageUrl };
-      setPerson(newPerson);
-      window.localStorage.setItem("person", JSON.stringify(newPerson));
+      fetch(imageUrl)
+        .then((res) => res.blob())
+        .then((blob) => {
+          const reader = new FileReader();
+          reader.onloadend = () => {
+            const newPerson = { ...person, image: reader.result };
+            setPerson(newPerson);
+            window.localStorage.setItem("person", JSON.stringify(newPerson));
+          };
+          reader.readAsDataURL(blob);
+        });
     }
   };
 
