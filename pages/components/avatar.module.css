@@ -1,0 +1,36 @@
+.avatar {
+  align-items: center;
+}
+
+.avatar > img {
+  border-radius: 50rem;
+}
+
+.avatar > div > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px var(--foreground) solid;
+  border-radius: 50rem;
+  width: 150px;
+  height: 150px;
+}
+
+.logo {
+  width: 24px;
+}
+
+.avatar .logo:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.deleteBtn {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50rem;
+  background: #000000a3;
+  border: none;
+  transform: translate(center);
+}
