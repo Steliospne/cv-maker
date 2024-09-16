@@ -1,0 +1,32 @@
+.work {
+  grid-area: 2 / 2 / 2 / 3;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.workEntry {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.workEntry > div > label {
+  display: block;
+  width: 150px;
+}
+
+.workEntry > div {
+  display: flex;
+}
+
+.workEntry > p:nth-child(3) {
+  width: 75ch;
+}
+
+.dateDisplay {
+  display: flex;
+  gap: 10px;
+}
