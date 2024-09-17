@@ -23,7 +23,7 @@
 }
 
 .workEntry > p:nth-child(3) {
-  width: 75ch;
+  max-width: 75ch;
 }
 
 .dateDisplay {
