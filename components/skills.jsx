@@ -36,7 +36,7 @@ export default function Skills({ data, onAdd, onDelete, isEditable }) {
           <input
             type='text'
             value={inputValue}
-            maxLength='10'
+            maxLength='20'
             placeholder='Type a skill...'
             onChange={(e) => setInputValue(e.target.value)}
           />
