@@ -4,6 +4,7 @@
 
 .avatar > img {
   border-radius: 50rem;
+  object-fit: cover;
 }
 
 .avatar > div > label {
