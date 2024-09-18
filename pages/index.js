@@ -14,14 +14,11 @@ export default function Home() {
   const [isEditable, setIsEditable] = useState(false);
   const [person, setPerson] = useState(data[0]);
   useEffect(() => {
-    const examplePerson = data[0];
     const personExists = window.localStorage.getItem("person");
 
     if (personExists) {
       const personLocal = JSON.parse(localStorage.getItem("person"));
       return setPerson(personLocal);
-    } else {
-      setPerson(examplePerson);
     }
   }, []);
 
